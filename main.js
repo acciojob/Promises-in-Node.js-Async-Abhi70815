@@ -18,7 +18,7 @@ function modifyText(text) {
   return new Promise((resolve, reject) => {
     // TODO: Convert text to uppercase and reverse it
     if(text){
-      resolve(text.toUpperCase().split('').reverse().join(''));
+      resolve(text.toUpperCase().split(' ').reverse().join(''));
     }
     else{
       reject("invalid text");
